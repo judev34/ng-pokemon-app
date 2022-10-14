@@ -19,6 +19,12 @@ export class AppComponent implements OnInit {
     console.log(this.pokemonList);
   }
 
+  /**
+   * We're looking for a pokemon in the pokemonList array that has an id property that matches the
+   * pokemonId parameter. If we find one, we assign it to the pokemonSelected property. If we don't
+   * find one, we assign undefined to the pokemonSelected property
+   * @param {string} pokemonId - string
+   */
   selectPokemon(pokemonId: string ) {
     const pokemon: Pokemon|undefined = this.pokemonList.find(pokemon => pokemon.id === +pokemonId);
     if (pokemon) {
