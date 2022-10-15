@@ -42,7 +42,7 @@ export class BorderCardDirective {
    * @param {number} height - number - The height of the element in pixels.
    */
   setHeight(height: number) {
-    this.el.nativeElement.style.height = `${{height}} + px`;
+    this.el.nativeElement.style.height = `${height} + px`;
   }
 
   /**
