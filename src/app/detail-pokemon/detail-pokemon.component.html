@@ -33,10 +33,11 @@
                     </tbody>
                 </table>
             </div>
+            <hr>
             <div class="card-action">
-            <!-- <a (click)="goBack()">Retour</a> -->
+                <a (click)="goTopokemonList()">Retour</a>
             </div>
         </div>
     </div>
 </div>
-<h4 *ngIf='!pokemon' class="center">Aucun pokémon à afficher !</h4>
+<h4 *ngIf='!pokemon'>Aucun pokémon à afficher !</h4>
