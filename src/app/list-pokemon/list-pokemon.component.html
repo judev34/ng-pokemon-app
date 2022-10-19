@@ -1,0 +1,18 @@
+<div class="card-container">
+    <div class="card" *ngFor="let pokemon of pokemonList" pokemonBorderCard>
+        <div class="card-image">
+            <img src="{{ pokemon.picture }}" alt="{{ pokemon.name }}">
+        </div>
+        <div class="card-content">
+            <div class="card-title">{{pokemon.name}}</div>
+            <div class="card-specs"><small>{{pokemon.created | date:'dd MMM YYYY'}}</small></div>
+            <div class="card_pokemon-types">
+                <div class="card_pokemon-types-container" *ngFor="let type of pokemon.types">
+                    <span class="pokemon-type" [style.backgroundColor]="type | pokemonTypeColor">
+                        <small>{{ type }}</small>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

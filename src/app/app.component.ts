@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   pokemonSelected: Pokemon|undefined;
 
   ngOnInit(): void {
-    console.log(this.pokemonList);
+
   }
 
   /**
