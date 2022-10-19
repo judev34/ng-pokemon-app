@@ -1,4 +1,5 @@
 .card-container {
+    font-family: "Roboto-Regular";
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
