@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
+    padding: 20px 0;
 }
 
 .card {

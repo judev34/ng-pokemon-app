@@ -1,1 +1,43 @@
-<p>detail-pokemon works!</p>
+<div *ngIf="pokemon" class="container">
+    <div class="card">
+        <h2>{{ pokemon.name }}</h2>
+        <div class="card-image">
+            <img [src]="pokemon.picture">
+        </div>
+        <div class="card-stacked">
+            <div class="card-content">
+                <table class="card-table">
+                    <tbody>
+                    <tr>
+                        <td>Nom</td>
+                        <td><strong>{{ pokemon.name }}</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Points de vie</td>
+                        <td><strong>{{ pokemon.hp }}</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Dégâts</td>
+                        <td><strong>{{ pokemon.cp }}</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Types</td>
+                        <td>
+                        <span class="pokemon-type" *ngFor="let type of pokemon.types" [style.backgroundColor]="type | pokemonTypeColor">{{ type }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date de création</td>
+                        <td><em>{{ pokemon.created | date:"dd/MM/yyyy" }}</em></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div class="card-action">
+                <a (click)="goToPokemonList()">Retour</a>
+            </div>
+        </div>
+    </div>
+</div>
+<h4 *ngIf='!pokemon'>Aucun pokémon à afficher !</h4>

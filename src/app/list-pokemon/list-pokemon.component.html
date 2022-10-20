@@ -1,6 +1,6 @@
 <div class="card-container">
     <div class="card" *ngFor="let pokemon of pokemonList" pokemonBorderCard>
-        <div class="card-image">
+        <div class="card-image" (click)="goToPokemon(pokemon)">
             <img src="{{ pokemon.picture }}" alt="{{ pokemon.name }}">
         </div>
         <div class="card-content">
