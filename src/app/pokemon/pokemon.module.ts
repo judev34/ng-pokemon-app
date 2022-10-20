@@ -5,6 +5,7 @@ import { DetailPokemonComponent } from './detail-pokemon/detail-pokemon.componen
 import { BorderCardDirective } from './border-card.directive';
 import { PokemonTypeColorPipe } from './pokemon-type-color.pipe';
 import { PokemonRoutingModule } from './pokemon-routing.module';
+import { PokemonService } from './pokemon.service';
 
 
 
@@ -21,5 +22,8 @@ import { PokemonRoutingModule } from './pokemon-routing.module';
   ],
   exports: [
   ],
+  providers: [
+    PokemonService
+  ]
 })
 export class PokemonModule { }
