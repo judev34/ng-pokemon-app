@@ -13,6 +13,15 @@ import { PokemonService } from '../pokemon.service';
     <app-pokemon-form *ngIf="pokemon" [pokemon]="pokemon"></app-pokemon-form>
   `,
   styles: [
+    `
+    h2 {
+      text-align: center;
+    }
+
+    .picture-container {
+      text-align: center;
+    }
+    `
   ]
 })
 export class EditPokemonComponent implements OnInit {
