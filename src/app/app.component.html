@@ -1,7 +1,27 @@
-<nav>
-    <div class="nav-item">
-        <a routerLink="/pokemons" routerLinkActive="active">Pokédex</a>
-    </div>
-</nav>
-    
-<router-outlet></router-outlet>
+<div class="container">
+    <aside>
+        <header>
+            <fa-icon class="icon-code" [icon]="faCode"></fa-icon>
+        </header>
+        <nav>
+            <div class="nav-item">
+                <a routerLink="/pokemons" routerLinkActive="active">
+                    <fa-icon class="icon-nav" [icon]="faHome"></fa-icon>Pokédex
+                </a>
+            </div>
+            <div class="nav-item">
+                <a routerLink="/pokemons" routerLinkActive="active">
+                    <fa-icon class="icon-nav" [icon]="faBell"></fa-icon>Notifications
+                </a>
+            </div>
+            <div class="nav-item">
+                <a routerLink="/pokemons" routerLinkActive="active">
+                    <fa-icon class="icon-nav" [icon]="faEnvelope"></fa-icon>Messages
+                </a>
+            </div>
+        </nav>
+    </aside>
+    <main>
+        <router-outlet></router-outlet>
+    </main>    
+</div>

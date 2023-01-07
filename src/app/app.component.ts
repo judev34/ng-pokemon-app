@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faBell } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -7,4 +11,10 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.css']
 })
 
-export class AppComponent {}
+export class AppComponent {
+
+  faCode = faCode;
+  faHome = faHome;
+  faBell = faBell;
+  faEnvelope = faEnvelope;
+}
